@@ -96,3 +96,14 @@ class DefiLlama:
         path = f'/tvl/{name}'
 
         return self._get(path)
+
+    def get_chains(self):
+        """
+        Returns TVL values for all the chains
+        Endpoint: GET /chains
+
+        :return: JSON response
+        """
+        path = f'/chains'
+
+        return self._get(path)
